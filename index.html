@@ -38,11 +38,9 @@
     <!-- Main banner section -->
 
     <section id="banner">
-      <div class="main-info" role="complementary">
         <div class="banner">
         <img src="./resources/capstone_colmar_assets/images/banner.jpg" alt="student image"/>
         </div>
-      </div>
         <div class="banner-text" role="presentation">
           <h1>Learn something new everyday</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -54,7 +52,7 @@
 
     <section id="info">
 
-      <div class="main-info" role="complementary">
+      <div class="main-info desktop" role="complementary">
         <div class="banner">
           <img src="./resources/capstone_colmar_assets/images/information-main.jpg" alt="student image"/>
         </div><!-- End of banner -->
@@ -69,7 +67,7 @@
 
         <div class="small-info-box">
          <div class="small-info" role="presentation">
-          <img  src="./resources/capstone_colmar_assets/images/information-orientation.jpg" alt="students image"/>
+          <img class="desktop" src="./resources/capstone_colmar_assets/images/information-orientation.jpg" alt="students image"/>
           <img class="mobile" src="./resources/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="students image"/>
           </div>
           <div class="small-text">
@@ -81,7 +79,7 @@
 
         <div class="small-info-box">
           <div class="small-info" role="presentation">
-            <img  src="./resources/capstone_colmar_assets/images/information-campus.jpg" alt="campus image"/>
+            <img  class="desktop"src="./resources/capstone_colmar_assets/images/information-campus.jpg" alt="campus image"/>
             <img  class="mobile" src="./resources/capstone_colmar_assets/images/information-campus-mobile.jpg" alt="campus image"/>
           </div>
           <div class="small-text">
@@ -93,8 +91,8 @@
 
             <div class="small-info-box guest">
             <div class="small-info" role="presentation">
-              <img  src="./resources/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="guest image"/>
-              <img   class="mobile" src="./resources/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="guest image"/>
+              <img  class="desktop"src="./resources/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="guest image"/>
+              <img  class="mobile" src="./resources/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="guest image"/>
             </div>
             <div class="small-text">
               <h4>Our guest lecture</h4>
@@ -110,7 +108,7 @@
     <section id="majors">
 
       <h2>Start learning</h2>
-      <div class="major">
+      <div class="major desktop">
         <div class="course" role="presentation">
           <img src="./resources/capstone_colmar_assets/images/course-software.jpg" alt="computer software image"/>
           <div class="course-text">
@@ -161,14 +159,14 @@
         </div><!-- End of course -->
       </div><!-- End of major-->
 
-      <nav class="mobile">
+      <nav class="mobile mobile-btn">
         <ul>
-          <li><button type="button" name="button">Software engineering</button></li>
-          <li><button type="button" name="button">Computer art</button></li>
-          <li><button type="button" name="button">Design</button></li>
-          <li><button type="button" name="button">Data</button></li>
-          <li><button type="button" name="button">Business</button></li>
-          <li><button type="button" name="button">Marketing</button></li>
+          <li><a class="button">Software engineering</a></li>
+          <li><a class="button">Computer art</a></li>
+          <li><a class="button">Design</a></li>
+          <li><a class="button">Data</a></li>
+          <li><a class="button">Business</a></li>
+          <li><a class="button">Marketing</a></li>
         </ul>
       </nav>
 
@@ -184,7 +182,7 @@
         <div class="banner" role="complementary">
           <video src="./resources/capstone_colmar_assets/videos/thesis.mp4" controls muted></video>
         </div>
-        <div class="text">
+        <div class="text desktop">
         <h3>Reimagine urban</h3>
         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
       </div>
@@ -192,21 +190,21 @@
 
       <aside class="aside"><!--info-->
 
-        <div class="small-info-box guest">
-          <div class="small-info" role="presentation">
+        <div class="small-info-box guest desktop">
+          <div class="small-info desktop" role="presentation">
             <img src="./resources/capstone_colmar_assets/images/thesis-fisma.jpg" alt="papers image"/>
           </div>
-          <div class="small-text">
+          <div class="small-text desktop">
             <h4>Fisma: Design and Prototype</h4>
             <p>Designer showcase of new prototype product</p>
           </div><!-- End of small-text-->
         </div><!-- End of small-info-box-->
 
-        <div class="small-info-box">
-          <div class="small-info" role="presentation">
+        <div class="small-info-box desktop">
+          <div class="small-info desktop" role="presentation">
             <img src="./resources/capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="New York image"/>
           </div>
-          <div class="small-text">
+          <div class="small-text desktop">
             <h4>Now and then</h4>
             <p>Research study about New York</p>
           </div><!-- End of small-text-->
@@ -216,7 +214,7 @@
 
     <footer>
       <span>&copy; 2016 Colmar Academy. All rights reserved</span>
-      <nav>
+      <nav class="desktop">
         <ul>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>

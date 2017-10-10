@@ -53,11 +53,6 @@ ul a {
   background-color: lightgrey;
 }
 
-/*.main-info .banner {
-  display: flex;
-  flex-direction: column;
-}*/
-
 .banner {
   max-width: 100%;
   margin: 2rem 1.5rem;
@@ -272,6 +267,108 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%;
   }
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .banner {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+  .banner-text h1 {
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1.5rem;
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .banner-text a {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #info {
+    padding-bottom: 0;
+  }
+
+  .aside {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .small-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+    background-color: white;
+  }
+
+  .small-info  {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+    .small-text {
+      padding-left: 0;
+      padding-bottom: 2rem;
+    }
+
+    #majors {
+      display: flex;
+      max-width: 100%;
+      background-color: white;
+      padding-bottom: 0;
+    }
+
+    section h2 {
+      display: flex;
+      text-align: left;
+      width: 100%;
+      padding-left: 2rem;
+    }
+
+    .mobile-btn a {
+      display: flex;
+      width: 100%;
+      font-size: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      padding-left: 1rem;
+    }
+
+    .exhibit {
+      padding-bottom: 1rem;
+    }
+
+    .main-info {
+      max-width: 100%;
+      padding-bottom: 1.5rem;
+    }
+
+    footer {
+      padding-bottom: 1rem;
+    }
 }
