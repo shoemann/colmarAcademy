@@ -5,6 +5,8 @@ html {
   font-family: 'Exo', sans-serif;
 }
 
+/* Header section */
+
 header {
   height: 4rem;
   width: 100%;
@@ -48,7 +50,9 @@ ul a {
   display: none;
 }
 
-#banner {
+/* Banner section */
+
+#main {
   display: flex;
   background-color: lightgrey;
 }
@@ -100,6 +104,8 @@ ul a {
   width: 40%;
 }
 
+/* Info section */
+
 #info {
   display: flex;
   background-color: white;
@@ -129,7 +135,7 @@ h2 {
   padding-bottom: 2rem;
 }
 
-.aside {
+aside {
   display: flex;
   flex-direction: column;
   max-width: 40%;
@@ -141,7 +147,6 @@ h2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 0.125px solid lightgray;
 }
 
 .small-info {
@@ -175,6 +180,8 @@ h2 {
 .guest {
   background-color: lightgrey;
 }
+
+/* Courses section */
 
 #majors {
   display: flex;
@@ -228,6 +235,8 @@ h4 {
   line-height: 1.5rem;
 }
 
+/* Yhesis section */
+
 #thesis {
   display: flex;
 }
@@ -258,7 +267,140 @@ footer {
   border-top: 0.25px solid lightgray;
 }
 
-@media only screen and (max-width: 480px) {
+/* Media Queries */
+
+/* Tablets Landscape */
+
+@media only screen and (max-width: 1024px) {
+
+.desktop {
+  display: none;
+}
+
+.mobile   {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.banner {
+  margin: 0;
+  max-width: 100%;
+}
+
+.banner-text {
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.banner-text h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.banner-text p {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.banner-text a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+#info {
+  padding-bottom: 0
+  margin-bottom: 2rem;
+}
+
+aside {
+  display: flex;
+  max-width: 100%;
+}
+
+.small-info-box {
+  display: flex;
+  padding-bottom: 1rem;
+  background-color: lightgray;
+}
+
+.small-info  {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+  .small-text {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+
+  #majors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+    padding-bottom: 0;
+  }
+
+  section h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobile-btn a {
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .exhibit {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .main-info {
+    max-width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  footer {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 768px) {
+
   .desktop {
     display: none;
   }
@@ -272,7 +414,7 @@ footer {
     width: 100%;
   }
 
-  #banner {
+  #main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,6 +431,136 @@ footer {
     max-width: 100%;
     padding-bottom: 2rem;
   }
+
+  .banner-text h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .banner-text p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .banner-text a {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #info {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+
+  aside {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .small-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: lightgray;
+  }
+
+  .small-info  {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+    .small-text {
+      padding-left: 0;
+      padding-bottom: 2rem;
+    }
+
+    #majors {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: lightgray;
+      padding-bottom: 0;
+    }
+
+    section h2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .mobile-btn {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .mobile-btn a {
+      display: flex;
+      width: 100%;
+      font-size: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      padding-left: 1rem;
+    }
+
+    .exhibit {
+      padding-bottom: 1rem;
+    }
+
+    .main-info {
+      max-width: 100%;
+      padding-bottom: 1.5rem;
+    }
+
+    footer {
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .banner {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+
   .banner-text h1 {
     font-size: 2.5rem;
     padding-left: 1rem;
@@ -312,7 +584,7 @@ footer {
     padding-bottom: 0;
   }
 
-  .aside {
+  aside {
     display: flex;
     max-width: 100%;
   }
@@ -338,16 +610,23 @@ footer {
 
     #majors {
       display: flex;
-      max-width: 100%;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
       background-color: white;
       padding-bottom: 0;
     }
 
     section h2 {
       display: flex;
+      justify-content: flex-start;
       text-align: left;
       width: 100%;
       padding-left: 2rem;
+    }
+
+    .button {
+      width: 100%;
     }
 
     .mobile-btn a {
